@@ -7,8 +7,60 @@
 //
 
 import UIKit
+import ObjectiveC
+import UIScrollView_InfiniteScroll
 
-public extension UITableViewController {
+@IBDesignable public extension UITableViewController {
+    // MARK: Properties
+    @IBInspectable var infiniteScrolls: Bool {
+        get { return objc_getAssociatedObject(self, "InfiniteScrolls") as? Bool ?? false }
+        set {
+            objc_setAssociatedObject(self,
+                "InfiniteScrolls",
+                newValue,
+                objc_AssociationPolicy.OBJC_ASSOCIATION_ASSIGN)
+            
+            if newValue {
+                self.tableView.addInfiniteScrollWithHandler { (_) in
+                    self.appendNextPage {
+                        self.tableView.finishInfiniteScroll()
+                    }
+                }
+            } else {
+                self.tableView.removeInfiniteScroll()
+            }
+        }
+    }
+    
+    @IBInspectable var refreshes: Bool {
+        get { return objc_getAssociatedObject(self, "Refreshes") as? Bool ?? false }
+        set {
+            objc_setAssociatedObject(self,
+                "Refreshes",
+                newValue,
+                objc_AssociationPolicy.OBJC_ASSOCIATION_ASSIGN)
+            
+            if newValue {
+                let refreshControl = UIRefreshControl()
+                refreshControl.addTarget(self,
+                    action: "refreshControlWasTriggered:",
+                    forControlEvents: .ValueChanged)
+                
+                self.tableView.addSubview(refreshControl)
+            } else {
+                let refreshControls = self.tableView.subviews.filter { $0.isKindOfClass(UIRefreshControl.self) }
+                refreshControls.forEach { $0.removeFromSuperview() }
+            }
+        }
+    }
+    
+    // MARK: Responders
+    func refreshControlWasTriggered(sender: UIRefreshControl!) {
+        self.reloadData {
+            sender.endRefreshing()
+        }
+    }
+    
     // MARK: Data Handlers
     public func reloadData(completion: () -> Void = {}) {
         self.tableView.reloadData()

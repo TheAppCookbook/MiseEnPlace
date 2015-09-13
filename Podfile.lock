@@ -1,0 +1,10 @@
+PODS:
+  - UIScrollView-InfiniteScroll (0.7.3)
+
+DEPENDENCIES:
+  - UIScrollView-InfiniteScroll
+
+SPEC CHECKSUMS:
+  UIScrollView-InfiniteScroll: b6c7d6d155dca7f9c5dd43813ecffeb301b3d50c
+
+COCOAPODS: 0.38.2
