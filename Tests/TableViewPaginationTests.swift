@@ -49,7 +49,7 @@ class TableViewPaginationTests: XCTestCase {
     func testAppendPageCallback() {
         let expectation = self.expectationWithDescription("👍 completion was called")
         
-        let collectionVC = UICollectionViewController()
+        let collectionVC = UICollectionViewController(collectionViewLayout: UICollectionViewFlowLayout()))
         collectionVC.appendNextPage {
             expectation.fulfill()
         }
