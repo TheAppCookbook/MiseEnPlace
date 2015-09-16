@@ -8,48 +8,48 @@
 
 import UIKit
 
-@IBDesignable extension UIView {
+@IBDesignable public extension UIView {
     // MARK: Properties
     
     // Borders
-    @IBInspectable var borderWidth: CGFloat {
+    @IBInspectable public var borderWidth: CGFloat {
         get { return self.layer.borderWidth }
         set { self.layer.borderWidth = newValue }
     }
     
-    @IBInspectable var borderColor: UIColor? {
+    @IBInspectable public var borderColor: UIColor? {
         get { return UIColor(CGColor: self.layer.borderColor!) }
         set { self.layer.borderColor = newValue?.CGColor }
     }
     
     // Corners & Bounds
-    @IBInspectable var cornerRadius: CGFloat {
+    @IBInspectable public var cornerRadius: CGFloat {
         get { return self.layer.cornerRadius }
         set { self.layer.cornerRadius = newValue }
     }
     
-    @IBInspectable var masksToBounds: Bool {
+    @IBInspectable public var masksToBounds: Bool {
         get { return self.layer.masksToBounds }
         set { self.layer.masksToBounds = newValue }
     }
     
     // Shadows
-    @IBInspectable var shadowRadius: CGFloat {
+    @IBInspectable public var shadowRadius: CGFloat {
         get { return self.layer.shadowRadius }
         set { self.layer.shadowRadius = newValue }
     }
     
-    @IBInspectable var shadowOffset: CGSize {
+    @IBInspectable public var shadowOffset: CGSize {
         get { return self.layer.shadowOffset }
         set { self.layer.shadowOffset = newValue }
     }
     
-    @IBInspectable var shadowColor: UIColor? {
+    @IBInspectable public var shadowColor: UIColor? {
         get { return UIColor(CGColor: self.layer.shadowColor!) }
         set { self.layer.shadowColor = newValue?.CGColor }
     }
     
-    @IBInspectable var shadowAlpha: CGFloat {
+    @IBInspectable public var shadowAlpha: CGFloat {
         get { return CGFloat(self.layer.shadowOpacity) }
         set { self.layer.shadowOpacity = Float(newValue) }
     }

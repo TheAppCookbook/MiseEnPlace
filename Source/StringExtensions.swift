@@ -8,9 +8,9 @@
 
 import Foundation
 
-extension String {
+public extension String {
     // MARK: Properties
-    var containsEmoji: Bool {
+    public var containsEmoji: Bool {
         for scalar in self.unicodeScalars {
             switch scalar.value {
             case 0x1F600...0x1F64F,   // Emoticons

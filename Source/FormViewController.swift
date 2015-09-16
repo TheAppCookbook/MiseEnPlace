@@ -42,12 +42,12 @@ public class FormViewController: UITableViewController {
     }
     
     // MARK: Validation Handlers
-    func inputIsValidForView(view: UIView) -> Bool {
+    public func inputIsValidForView(view: UIView) -> Bool {
         return false
     }
     
     // MARK: Responders
-    func inputDidChange() {
+    @IBAction public func inputDidChange() {
         self.doneButton?.enabled = self.inputValid
     }
 }

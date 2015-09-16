@@ -8,8 +8,8 @@
 
 import UIKit
 
-extension UIColor {
-    convenience init(hexString: String) {
+public extension UIColor {
+    convenience public init(hexString: String) {
         var rgbValue: UInt32 = 0
         
         let scanner = NSScanner(string: hexString)
@@ -51,10 +51,10 @@ extension UIColor {
     }
 }
 
-func +(lhs: UIColor, rhs: UIColor) -> UIColor {
+public func +(lhs: UIColor, rhs: UIColor) -> UIColor {
     return lhs.combine(rhs, op: +)
 }
 
-func -(lhs: UIColor, rhs: UIColor) -> UIColor {
+public func -(lhs: UIColor, rhs: UIColor) -> UIColor {
     return lhs.combine(rhs, op: -)
 }

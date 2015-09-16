@@ -12,7 +12,7 @@ import UIScrollView_InfiniteScroll
 
 @IBDesignable public extension UITableViewController {
     // MARK: Properties
-    @IBInspectable var infiniteScrolls: Bool {
+    @IBInspectable public var infiniteScrolls: Bool {
         get { return objc_getAssociatedObject(self, "InfiniteScrolls") as? Bool ?? false }
         set {
             objc_setAssociatedObject(self,
@@ -32,7 +32,7 @@ import UIScrollView_InfiniteScroll
         }
     }
     
-    @IBInspectable var refreshes: Bool {
+    @IBInspectable public var refreshes: Bool {
         get { return objc_getAssociatedObject(self, "Refreshes") as? Bool ?? false }
         set {
             objc_setAssociatedObject(self,
@@ -55,7 +55,7 @@ import UIScrollView_InfiniteScroll
     }
     
     // MARK: Responders
-    func refreshControlWasTriggered(sender: UIRefreshControl!) {
+    public func refreshControlWasTriggered(sender: UIRefreshControl!) {
         self.reloadData {
             sender.endRefreshing()
         }
@@ -75,7 +75,7 @@ import UIScrollView_InfiniteScroll
 
 @IBDesignable public extension UICollectionViewController {
     // MARK: Properties
-    @IBInspectable var infiniteScrolls: Bool {
+    @IBInspectable public var infiniteScrolls: Bool {
         get { return objc_getAssociatedObject(self, "InfiniteScrolls") as? Bool ?? false }
         set {
             objc_setAssociatedObject(self,
@@ -95,7 +95,7 @@ import UIScrollView_InfiniteScroll
         }
     }
     
-    @IBInspectable var refreshes: Bool {
+    @IBInspectable public var refreshes: Bool {
         get { return objc_getAssociatedObject(self, "Refreshes") as? Bool ?? false }
         set {
             objc_setAssociatedObject(self,
@@ -118,7 +118,7 @@ import UIScrollView_InfiniteScroll
     }
     
     // MARK: Responders
-    func refreshControlWasTriggered(sender: UIRefreshControl!) {
+    public func refreshControlWasTriggered(sender: UIRefreshControl!) {
         self.reloadData {
             sender.endRefreshing()
         }
