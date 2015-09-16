@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:MiseEnPlace.podspec">
+   </FileRef>
+   <FileRef
       location = "group:MiseEnPlace.xcodeproj">
    </FileRef>
    <FileRef
