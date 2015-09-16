@@ -8,6 +8,6 @@ Pod::Spec.new do |spec|
   spec.source           = { :git => 'https://github.com/TheAppCookbook/MiseEnPlace.git', :branch => 'master' }
   spec.source_files     = 'source/*.swift'
   spec.platform         = :ios, '9.0'
-  spec.dependency       = 'UIScrollView-InfiniteScroll'
-  spec.dependency       = 'AFNetworking'
+  spec.dependency         'UIScrollView-InfiniteScroll'
+  spec.dependency         'AFNetworking'
 end
