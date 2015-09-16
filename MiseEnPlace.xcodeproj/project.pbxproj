@@ -12,20 +12,20 @@
 		736D7ECD1BA4B38400CD1FF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 736D7ECB1BA4B38400CD1FF0 /* Main.storyboard */; };
 		736D7ECF1BA4B38400CD1FF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 736D7ECE1BA4B38400CD1FF0 /* Assets.xcassets */; };
 		736D7ED21BA4B38400CD1FF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 736D7ED01BA4B38400CD1FF0 /* LaunchScreen.storyboard */; };
-		736D7EEB1BA4B4F000CD1FF0 /* TableViewPagination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736D7EEA1BA4B4F000CD1FF0 /* TableViewPagination.swift */; };
+		736D7EEB1BA4B4F000CD1FF0 /* Pagination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736D7EEA1BA4B4F000CD1FF0 /* Pagination.swift */; };
 		736D7EEF1BA4B50D00CD1FF0 /* TableViewPaginationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736D7EEE1BA4B50D00CD1FF0 /* TableViewPaginationTests.swift */; };
-		736D7EF11BA4B5E300CD1FF0 /* TableViewPagination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736D7EEA1BA4B4F000CD1FF0 /* TableViewPagination.swift */; };
+		736D7EF11BA4B5E300CD1FF0 /* Pagination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736D7EEA1BA4B4F000CD1FF0 /* Pagination.swift */; };
 		736D7EF31BA4B9F000CD1FF0 /* KeyboardLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736D7EF21BA4B9F000CD1FF0 /* KeyboardLayoutConstraint.swift */; };
 		736D7F151BA4BD4500CD1FF0 /* KeyboardLayoutConstrainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736D7F131BA4BD2900CD1FF0 /* KeyboardLayoutConstrainTests.swift */; };
 		736D7F171BA4C3A300CD1FF0 /* KeyboardTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736D7F161BA4C3A300CD1FF0 /* KeyboardTestViewController.swift */; };
 		736D7F191BA4C56500CD1FF0 /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736D7F181BA4C56500CD1FF0 /* FormViewController.swift */; };
 		736D7F1D1BA4C79E00CD1FF0 /* FormTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736D7F1A1BA4C79A00CD1FF0 /* FormTestViewController.swift */; };
 		736D7F221BA4CA4500CD1FF0 /* FormViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736D7F201BA4CA4200CD1FF0 /* FormViewControllerTests.swift */; };
-		73B8BAA21BA4FE3E00ECA597 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B8BAA11BA4FE3E00ECA597 /* StringExtensions.swift */; settings = {ASSET_TAGS = (); }; };
-		73B8BAA41BA4FE8500ECA597 /* StringExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B8BAA31BA4FE8500ECA597 /* StringExtensionTests.swift */; settings = {ASSET_TAGS = (); }; };
-		73B8BAA51BA4FE8F00ECA597 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B8BAA11BA4FE3E00ECA597 /* StringExtensions.swift */; settings = {ASSET_TAGS = (); }; };
-		73B8BAA71BA4FF8E00ECA597 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B8BAA61BA4FF8E00ECA597 /* ViewExtensions.swift */; settings = {ASSET_TAGS = (); }; };
-		73B8BAA91BA5261700ECA597 /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B8BAA81BA5261700ECA597 /* ColorExtensions.swift */; settings = {ASSET_TAGS = (); }; };
+		73B8BAA21BA4FE3E00ECA597 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B8BAA11BA4FE3E00ECA597 /* StringExtensions.swift */; };
+		73B8BAA41BA4FE8500ECA597 /* StringExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B8BAA31BA4FE8500ECA597 /* StringExtensionTests.swift */; };
+		73B8BAA51BA4FE8F00ECA597 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B8BAA11BA4FE3E00ECA597 /* StringExtensions.swift */; };
+		73B8BAA71BA4FF8E00ECA597 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B8BAA61BA4FF8E00ECA597 /* ViewExtensions.swift */; };
+		73B8BAA91BA5261700ECA597 /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B8BAA81BA5261700ECA597 /* ColorExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,7 +55,7 @@
 		736D7ED31BA4B38400CD1FF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		736D7ED81BA4B38500CD1FF0 /* MiseEnPlaceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiseEnPlaceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		736D7EDE1BA4B38500CD1FF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		736D7EEA1BA4B4F000CD1FF0 /* TableViewPagination.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewPagination.swift; path = Source/TableViewPagination.swift; sourceTree = "<group>"; };
+		736D7EEA1BA4B4F000CD1FF0 /* Pagination.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Pagination.swift; path = Source/Pagination.swift; sourceTree = "<group>"; };
 		736D7EEE1BA4B50D00CD1FF0 /* TableViewPaginationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewPaginationTests.swift; path = Tests/TableViewPaginationTests.swift; sourceTree = "<group>"; };
 		736D7EF21BA4B9F000CD1FF0 /* KeyboardLayoutConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KeyboardLayoutConstraint.swift; path = Source/KeyboardLayoutConstraint.swift; sourceTree = "<group>"; };
 		736D7EFC1BA4BC8D00CD1FF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -158,7 +158,7 @@
 		736D7EE91BA4B4DD00CD1FF0 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				736D7EEA1BA4B4F000CD1FF0 /* TableViewPagination.swift */,
+				736D7EEA1BA4B4F000CD1FF0 /* Pagination.swift */,
 				736D7EF21BA4B9F000CD1FF0 /* KeyboardLayoutConstraint.swift */,
 				736D7F181BA4C56500CD1FF0 /* FormViewController.swift */,
 				73B8BAAA1BA5261A00ECA597 /* General Extensions */,
@@ -394,7 +394,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				736D7EEB1BA4B4F000CD1FF0 /* TableViewPagination.swift in Sources */,
+				736D7EEB1BA4B4F000CD1FF0 /* Pagination.swift in Sources */,
 				736D7EF31BA4B9F000CD1FF0 /* KeyboardLayoutConstraint.swift in Sources */,
 				73B8BAA71BA4FF8E00ECA597 /* ViewExtensions.swift in Sources */,
 				736D7F1D1BA4C79E00CD1FF0 /* FormTestViewController.swift in Sources */,
@@ -412,7 +412,7 @@
 			files = (
 				73B8BAA51BA4FE8F00ECA597 /* StringExtensions.swift in Sources */,
 				736D7EEF1BA4B50D00CD1FF0 /* TableViewPaginationTests.swift in Sources */,
-				736D7EF11BA4B5E300CD1FF0 /* TableViewPagination.swift in Sources */,
+				736D7EF11BA4B5E300CD1FF0 /* Pagination.swift in Sources */,
 				73B8BAA41BA4FE8500ECA597 /* StringExtensionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,7 +10,7 @@ import XCTest
 
 class TableViewPaginationTests: XCTestCase {
     // MARK: Tests
-    func testReloadDataCallback() {
+    func testTableViewReloadDataCallback() {
         let expectation = self.expectationWithDescription("👍 completion was called")
         
         let tableVC = UITableViewController()
@@ -22,11 +22,35 @@ class TableViewPaginationTests: XCTestCase {
             handler: nil)
     }
     
-    func testAppendPageCallback() {
+    func testTableViewAppendPageCallback() {
         let expectation = self.expectationWithDescription("👍 completion was called")
         
         let tableVC = UITableViewController()
         tableVC.appendNextPage {
+            expectation.fulfill()
+        }
+        
+        self.waitForExpectationsWithTimeout(5.0,
+            handler: nil)
+    }
+    
+    func testCollectionViewReloadDataCallback() {
+        let expectation = self.expectationWithDescription("👍 completion was called")
+        
+        let collectionVC = UICollectionViewController(collectionViewLayout: UICollectionViewFlowLayout())
+        collectionVC.reloadData {
+            expectation.fulfill()
+        }
+        
+        self.waitForExpectationsWithTimeout(5.0,
+            handler: nil)
+    }
+    
+    func testAppendPageCallback() {
+        let expectation = self.expectationWithDescription("👍 completion was called")
+        
+        let collectionVC = UICollectionViewController()
+        collectionVC.appendNextPage {
             expectation.fulfill()
         }
         
