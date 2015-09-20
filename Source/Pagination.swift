@@ -34,7 +34,7 @@ public protocol PageableViewController: NSObjectProtocol {
     func refreshControlWasTriggered(sender: UIRefreshControl!)
     
     // MARK: Data Handlers
-    func reloadData(completion: () -> Void)
+    func reloadData(byMerging: Bool, completion: () -> Void)
     func appendNextPage(completion: () -> Void)
 }
 
@@ -90,7 +90,7 @@ public extension PageableViewController {
     }
     
     // MARK: Data Handlers
-    func reloadData(completion: () -> Void = {}) {
+    func reloadData(byMerging: Bool = true, completion: () -> Void = {}) {
         self.pageableView?.reloadData()
         completion()
     }

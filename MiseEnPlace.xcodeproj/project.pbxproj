@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		07801030B1110929B30D7FE3 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6442AC532EF30EAD5FED1DC /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		735E96651BADEECC005E950F /* CollectionExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735E96641BADEECC005E950F /* CollectionExtensions.swift */; settings = {ASSET_TAGS = (); }; };
+		735E96671BADF2FB005E950F /* CollectionExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735E96661BADF2FB005E950F /* CollectionExtensionTests.swift */; settings = {ASSET_TAGS = (); }; };
+		735E96691BADF2FF005E950F /* CollectionExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735E96641BADEECC005E950F /* CollectionExtensions.swift */; settings = {ASSET_TAGS = (); }; };
 		736D7EC81BA4B38400CD1FF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736D7EC71BA4B38400CD1FF0 /* AppDelegate.swift */; };
 		736D7ECD1BA4B38400CD1FF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 736D7ECB1BA4B38400CD1FF0 /* Main.storyboard */; };
 		736D7ECF1BA4B38400CD1FF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 736D7ECE1BA4B38400CD1FF0 /* Assets.xcassets */; };
@@ -47,6 +50,8 @@
 
 /* Begin PBXFileReference section */
 		02BFC0300CFCA934CA892688 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		735E96641BADEECC005E950F /* CollectionExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionExtensions.swift; path = Source/CollectionExtensions.swift; sourceTree = "<group>"; };
+		735E96661BADF2FB005E950F /* CollectionExtensionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionExtensionTests.swift; path = Tests/CollectionExtensionTests.swift; sourceTree = "<group>"; };
 		736D7EC41BA4B38400CD1FF0 /* MiseEnPlace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiseEnPlace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		736D7EC71BA4B38400CD1FF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		736D7ECC1BA4B38400CD1FF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -173,6 +178,7 @@
 				736D7F131BA4BD2900CD1FF0 /* KeyboardLayoutConstrainTests.swift */,
 				736D7F201BA4CA4200CD1FF0 /* FormViewControllerTests.swift */,
 				73B8BAA31BA4FE8500ECA597 /* StringExtensionTests.swift */,
+				735E96661BADF2FB005E950F /* CollectionExtensionTests.swift */,
 			);
 			name = Tests;
 			sourceTree = "<group>";
@@ -199,6 +205,7 @@
 				73B8BAA11BA4FE3E00ECA597 /* StringExtensions.swift */,
 				73B8BAA61BA4FF8E00ECA597 /* ViewExtensions.swift */,
 				73B8BAA81BA5261700ECA597 /* ColorExtensions.swift */,
+				735E96641BADEECC005E950F /* CollectionExtensions.swift */,
 			);
 			name = "General Extensions";
 			sourceTree = "<group>";
@@ -395,6 +402,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				736D7EEB1BA4B4F000CD1FF0 /* Pagination.swift in Sources */,
+				735E96651BADEECC005E950F /* CollectionExtensions.swift in Sources */,
 				736D7EF31BA4B9F000CD1FF0 /* KeyboardLayoutConstraint.swift in Sources */,
 				73B8BAA71BA4FF8E00ECA597 /* ViewExtensions.swift in Sources */,
 				736D7F1D1BA4C79E00CD1FF0 /* FormTestViewController.swift in Sources */,
@@ -411,8 +419,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				73B8BAA51BA4FE8F00ECA597 /* StringExtensions.swift in Sources */,
+				735E96671BADF2FB005E950F /* CollectionExtensionTests.swift in Sources */,
 				736D7EEF1BA4B50D00CD1FF0 /* TableViewPaginationTests.swift in Sources */,
 				736D7EF11BA4B5E300CD1FF0 /* Pagination.swift in Sources */,
+				735E96691BADF2FF005E950F /* CollectionExtensions.swift in Sources */,
 				73B8BAA41BA4FE8500ECA597 /* StringExtensionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
