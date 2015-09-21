@@ -21,15 +21,7 @@ struct User: Hashable {
 
 class CollectionExtensionTests: XCTestCase {
 
-    func testSimpleMerge() {
-        let x = [0, 2, 3, 9]
-        let y = [1, 2, 5, 8, 7]
-        
-        let z = x.merged(y)
-        XCTAssertEqual(z, [0, 1, 2, 5, 3, 8, 9, 7])
-    }
-    
-    func testComplexMerge() {
+    func testMerge() {
         let oldData = [
             User(id: 0, name: "Matthew"),
             User(id: 1, name: "Glenn"),
@@ -43,7 +35,7 @@ class CollectionExtensionTests: XCTestCase {
         ]
         
         let indices = oldData.merged(newData).map { $0.id }
-        XCTAssertEqual(indices, [0, 3, 4, 1, 2])
+        XCTAssertEqual(indices, [0, 1, 2, 3, 4])
     }
 
 }
